@@ -1,23 +1,23 @@
 import React, { useState } from 'react';
-import "./queja.css"
+import "./reclamo.css"
 
-const Queja = () => {
+const Reclamo = () => {
   const [motivo, setMotivo] = useState("");
   const [descripcion, setDescripcion] = useState("");
-  // Puedes agregar más estados para otros campos de la queja
+  // Puedes agregar más estados para otros campos de la Reclamo
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes realizar alguna acción con los datos de la queja
-    console.log("Datos de la queja a procesar:", { motivo, descripcion });
+    // Aquí puedes realizar alguna acción con los datos de la Reclamo
+    console.log("Datos de la Reclamo:", { motivo, descripcion });
   };
 
   return (
-    <div className='queja'>
-      <h2>Queja</h2>
+    <div className='Reclamo'>
+      <h2>Reclamo</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          Motivo de la queja:
+          Motivo de la Reclamo:
           <input
             type="text"
             value={motivo}
@@ -33,11 +33,11 @@ const Queja = () => {
             required
           />
         </label>
-        {/* Agrega más campos de la queja aquí */}
-        <button className='buttonQueja' type="submit">Enviar Queja</button>
-      </form>    
+        {/* Agrega más campos de la Reclamo aquí */}
+        <button className='buttonReclamo' type="submit">Enviar Reclamo</button>
+      </form>      
     </div>
   );
 };
 
-export default Queja;
+export default Reclamo;

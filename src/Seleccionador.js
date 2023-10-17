@@ -1,28 +1,22 @@
-import Option from "./Option";
+import "./seleccionador.css"
 
-const Seleccionador = ({reqType, setReqType}) => {
-    return(
-        // <form onSubmit={(e) => e.preventDefault()}>
-            
-        // </form>
-		<select className="form-control" id="select1">
-            <Option
-                optionText = {"Select"}
-                reqType = {reqType}
-                setReqType = {setReqType}
-            />
-            <Option
-                optionText = {"Solicitud"}
-                reqType = {reqType}
-                setReqType = {setReqType}
-            />
-            <Option
-                optionText = {"Queja"}  
-                reqType = {reqType}
-                setReqType = {setReqType}
-            />
-		</select>    
-    )
+const Seleccionador = ({ reqType, setReqType }) => {
+  const handleSelectChange = (event) => {
+    setReqType(event.target.value);
+  };
+
+  return (
+    <div className="motivo">
+        <h2>
+            Motivo
+        </h2>
+        <select className="form-control" id="select1" onChange={handleSelectChange} value={reqType}>
+        <option value="Select">Select</option>
+        <option value="Solicitud">Solicitud</option>
+        <option value="Queja">Queja</option>
+        </select>
+    </div>
+  );
 };
 
 export default Seleccionador;

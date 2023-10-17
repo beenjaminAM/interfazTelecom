@@ -1,19 +1,10 @@
-import React, { useState } from 'react';
 import DatosPersonalesForm from './DatosPersonalesForm';
 import Seleccionador from './Seleccionador';
 import Solicitud from './Solicitud';
 import Queja from './Queja';
 // ... (import Seleccionador, Solicitud, Queja if needed)
 
-const Main = () => {
-  const [nombre, setNombre] = useState("");
-  const [apellidoPaterno, setApellidoPaterno] = useState("");
-  const [apellidoMaterno, setApellidoMaterno] = useState("");
-  const [dni, setDni] = useState("");
-  const [direccion, setDireccion] = useState("");
-  const [telefono, setTelefono] = useState("");
-  const [reqType, setReqType] = useState('Select');
-
+const Main = ({ nombre, setNombre, apellidoMaterno, setApellidoMaterno, apellidoPaterno, setApellidoPaterno, dni, setDni, direccion, setDireccion, telefono, setTelefono, reqType, setReqType }) => {
   return (
     <main>
       <DatosPersonalesForm
@@ -43,3 +34,4 @@ const Main = () => {
 };
 
 export default Main;
+    

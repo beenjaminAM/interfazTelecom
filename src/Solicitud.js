@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./solicitud.css"
 
 const Solicitud = () => {
   const [motivo, setMotivo] = useState("");
@@ -12,7 +13,7 @@ const Solicitud = () => {
   };
 
   return (
-    <div>
+    <div className='solicitud'>
       <h2>Solicitud</h2>
       <form onSubmit={handleSubmit}>
         <label>
@@ -28,12 +29,14 @@ const Solicitud = () => {
           Descripción:
           <textarea
             value={descripcion}
-            onChange={(e) => setDescripcion(e.target.value)}
+            onChange={(e) => {setDescripcion(e.target.value)
+              console.log(descripcion)
+            }}
             required
           />
         </label>
         {/* Agrega más campos de la solicitud aquí */}
-        <button type="submit">Enviar Solicitud</button>
+        <button className='buttonSolicitud' type="submit">Enviar Solicitud</button>
       </form>
     </div>
   );

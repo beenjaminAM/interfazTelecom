@@ -1,0 +1,24 @@
+/* Estilos para el motivo */
+.motivo {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+.motivo h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+  
+  .motivo select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+.motivo {
+    background-color: #f0f7f4;
+}
