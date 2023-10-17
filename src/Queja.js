@@ -17,7 +17,7 @@ const Queja = () => {
       <h2>Queja</h2>
       <form onSubmit={handleSubmit}>
         <label>
-          Motivo de la queja ahora:
+          Motivo de la queja ahoras:
           <input
             type="text"
             value={motivo}
