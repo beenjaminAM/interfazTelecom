@@ -9,7 +9,7 @@ const Queja = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Aquí puedes realizar alguna acción con los datos de la queja
-    console.log("Datos de la queja a procesar:", { motivo, descripcion });
+    console.log("Datos de la Queja a procesar:", { motivo, descripcion });
   };
 
   return (
